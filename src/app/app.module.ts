@@ -13,6 +13,11 @@ import { NavDashboardComponent } from './components/shared/nav-dashboard/nav-das
 // importación de modulos
 import { AboutModule } from './pages/public/about/about.module';
 import { PublicModule } from './pages/public/public.module';
+import { HeaderBaseComponent } from './components/header-base/header-base.component';
+import { ServicesModule } from './services/services.module';
+
+
+// import { ServicesModule } from './services/services.module';
 
 
 
@@ -22,10 +27,12 @@ import { PublicModule } from './pages/public/public.module';
     FooterComponent,
     NavbarComponent,
     NavDashboardComponent,
+    HeaderBaseComponent,
 
   ],
   imports: [
     BrowserModule,
+    ServicesModule,
     PublicModule,
     AboutModule,
 

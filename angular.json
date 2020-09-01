@@ -28,8 +28,15 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/star-rating.min.css",
+              // "src/we.css",
+              "src/styles.sass",
+              "src/generals.sass",
+
+
             ],
+
+
             "scripts": []
           },
           "configurations": {
@@ -51,18 +58,19 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "1mb",
+                  "maximumError": "1mb"
                 }
               ]
             }
           }
         },
+
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
@@ -92,7 +100,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.sass"
+              "src/star-rating.min.css",
+              "src/we.css",
+              "src/styles.sass",
+              "src/generals.sass",
+
+
             ],
             "scripts": []
           }
